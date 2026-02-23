@@ -1,0 +1,69 @@
+/* Dunkleres Theme, klares Layout */
+:root{
+  --bg: #060b1a;
+  --card:#0c1530;
+  --text:#e9eefb;
+  --muted:#a8b6d8;
+  --accent:#4cc9f0;
+  --accent-2:#ffd166;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  background: radial-gradient(1400px 900px at 20% -10%, #101e46, var(--bg));
+  color:var(--text);
+}
+.site-header{
+  text-align:center;
+  padding:2.2rem 1rem 1rem;
+}
+.site-header h1{margin:0;font-weight:800;letter-spacing:.3px}
+.tagline{margin:.35rem 0 0;color:var(--muted)}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:1.2rem;
+  padding:1rem;
+  max-width:1200px;
+  margin:0 auto;
+}
+.card{
+  background:linear-gradient(180deg, #142146, #0a1430 60%);
+  border:1px solid #26345f;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+.hero{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  display:block;
+  filter:saturate(1.05) contrast(1.05);
+}
+/* Sichtbare Logos pro Bild: Fokus nach oben verlagern */
+.hero-filple{ object-position:center 15%; }
+.hero-natur{ object-position:center 25%; }
+.card-body{padding:1rem 1rem 1.2rem}
+.card h2{margin:.2rem 0 1rem;font-size:1.25rem}
+.values{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:.8rem;
+}
+.value{
+  background:linear-gradient(180deg, #13275b, #0d1a3b);
+  border:1px solid #22305a;
+  border-radius:14px;
+  padding:.8rem;
+}
+.label{font-size:.88rem;color:var(--muted)}
+.temp{font-size:2.1rem;font-weight:800;margin-top:.2rem}
+.meta{margin-top:.6rem;color:var(--muted);font-size:.85rem}
+.site-footer{
+  display:flex;justify-content:space-between;gap:.5rem;
+  padding:1rem;max-width:1200px;margin:0 auto;color:var(--muted)
+}
+.site-footer a{color:var(--muted)}
